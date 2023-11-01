@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Management</title>
+    <!--Logo Website-->
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <!--Framework Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style-admin.css">
+    <!--FontAwesome Icon-->
+    <script src="https://kit.fontawesome.com/a28c4a206b.js" crossorigin="anonymous"></script>
+    <!--Poppins Font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>    
+</head>
+<body>
+    <!--HEADER-->
+    <header class="container-fluid" id="">
+        <div class="d-flex align-items-center justify-content-between mx-lg-5" id="admin-box-header">
+            <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvasExample">
+                <i class="h1 fa-solid fa-bars m-0" style="color: #000000;"></i>
+            </button>
+            <img src="images/INSTRUMENTALIZE_logo.png" class="ml-5" alt="instrumentalize-logo">
+            <h3 class="d-none d-lg-block mb-0">Selamat datang, Admin</h3>
+            <div class="dropdown-center">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="h1 fa-regular fa-user m-0" style="color: #000"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex" id="wrapper-content">
+        <!--SIDEBAR NAVIGATION-->
+        <div class="offcanvas-lg offcanvas-start bg-black text-light" tabindex="-1" id="offcanvas-navbar" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-center">
+                <img src="images/INSTRUMENTALIZE_logo.png" alt="" width="200px">
+            </div>
+        <nav class="d-lg-flex flex-column text-white p-4" id="admin-box-navigation">
+            <ul class="h4 navbar-nav">
+                <li class="nav-item">
+                    <a href="admin-dashboard.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-editor.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Editor
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-management.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-table"></i>
+                        Management
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-orders.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-user.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-id-card"></i>
+                        User
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-reports.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-message"></i>
+                        Reports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <!--CONTENT-->
+        <section class="text-light p-3" id="admin-box-content">
+            <h2><b>Management</b></h2>
+            <div class="container-fluid text-dark p-2" id="content-box-management">
+                <div class="container-fluid d-flex justify-content-between py-2 px-0">
+                    <h3 class="mb-0">Produk</h3>
+                    <form action="">
+                        <input type="text" class="form-control focus-ring focus-ring-secondary" id="input-search" placeholder="Cari...">
+                    </form>
+                    <button class="btn btn-light d-flex align-items-center p-1" id="button-management-add">
+                        <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                        <p class="m-0">Tambah</p>
+                    </button>
+                </div>
+                <div class="overflow-x-scroll">
+                    <table class="table table-striped" id="admin-table-management">
+                        <thead class="text-center">
+                            <tr>
+                                <th scope="col">Produk ID</th>
+                                <th scope="col">Nama Produk</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Deskripsi</th>
+                                <th scope="col">Stok</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>$product_id</td>
+                                <td>$product_name</td>
+                                <td>$product_category</td>
+                                <td>$product_desc</td>
+                                <td>$product_stock</td>
+                                <td>$Product_price</td>
+                                <td><button class=""></button></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <ul class="list-unstyled d-flex justify-content-end mb-0 py-4" id="pagination-table">
+                        <li>
+                            <a>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <input class="text-center type="text" name="" id="" placeholder="1">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <button class="btn btn-light">
+                                    <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                                </button>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                <div class="container-fluid">
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid justify-content-center d-flex align-items-end" id="">
+        ©2023 INSTRUMENTALIZE
+    </footer>
+</body>
+</html>

@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+    animation-timeline: view();
+}
+body {
+    background-image: url(images/body-background.png);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/*----------NAVIGATION----------*/
+nav {
+    background-color: #1D3557;
+    font-size: 20px;
+}
+#navbar{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+.nav-link{
+    padding: 0;
+}
+#instrumentalize-logo, #toggler-button{
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+.navbar-nav li a{
+    color: #eeeeee;
+    border-bottom: 2px solid transparent;
+    transition: all .40s ease;
+
+    &:hover{
+    color: #eeeeee;
+    border-bottom: 2px solid;
+    }
+}
+.navbar-nav li a:focus{
+    color: #eeeeee;
+}
+
+#navbar,
+#navbar-brand{
+    padding: 0;
+}
+#input-search{
+    margin-right: -10px;
+}
+#btn-search i{
+    padding: 0px 10px 0px 10px;
+}
+#btn-search{
+    background-color: #b5b5b5;
+}
+#input-search:hover,
+#input-search:focus{
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: white;
+}
+@media (min-width: 992px) {
+    #user-navigation a{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 991px) {
+    #navbarSupportedContent ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 425px) {
+    #navbarSupportedContent ul{
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0;
+    }
+}
+
+/*----------FOOTER----------*/
+footer {
+    background-color: #1D3557;
+    min-height: 200px;
+    width: 100%;
+    color: #eeeeee;
+}
+#footer-pintasan a{
+    color: #eeeeee;
+    transition: 0.1s ease;
+
+    &:hover{
+        color: rgba(238, 238, 238, 0.5);
+    }
+}
+#footer-copyright{
+    font-size: 10px;
+    background-color: black;
+}
+footer #footer-head{
+    font-size: 20px;
+    font-weight: bold;
+}
+footer #footer-body{
+    font-size: 12px;
+}
+
+/*------------------------------CONTENT------------------------------*/
+#wrapper-content{
+    min-height: calc(100vh - 215px);
+    padding-top: 100px;
+}
+
+.card{
+    margin: auto;
+}
+
+#word-justify{
+    text-align: justify;
+}
+
+.product-hover {
+    transition: transform .5s;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+        content: '';
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale3d(1.006, 1.006, 1);
+    
+        &::after {
+        opacity: 1;
+        }
+    }
+}
+
+/*----------*/
+.main-modal .modal-content{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.modal-content button{
+    font-size: 20px;
+    color: #eeeeee;
+}
+.main-modal .modal-content hr{
+    margin: 0;
+}
+/*----------*/
+
+/*----------MAIN WEB----------*/
+#main-head{
+    min-height: 100vh;
+    height: auto;
+    padding-top: 100px;
+    background-color: rgba(253, 255, 253, 0.8)
+}
+#main-head-img{
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+#main-head-button{
+    &:focus{
+        border: 0;
+    }
+}
+#main-head a, #main-head button{
+    border: none;
+    background-color: #1D3557;
+    border-radius: 15px;
+    color: #fdfffd;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+#wrapper-section{
+    background-color: #e5e5e5;
+    max-width: 1000px;
+    width: 100%;
+    height: fit-content;
+}
+
+#main-box-rekomendasi{
+    background-color: #fdfffd;
+    height: auto;
+}
+#main-box-rekomendasi a{
+    text-decoration: none;
+}
+#main-box-rekomendasi #product{
+    max-width: 200px;
+    max-height: 300px;
+}
+
+#main-box-benefit{
+    background-color: #d9d9d9;
+    min-height: 300px;
+    height: auto;
+}
+#main-box-benefit #main-icon-benefit{
+    font-size: 100px;
+}
+
+#main-box-category{
+    background-color: #fdfffd;
+    height: auto;
+}
+#main-box-category #category{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#main-box-highlight{
+    background-color: #fdfffd;
+    max-width: 900px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+}
+#main-box-highlight img{
+    max-width: 900px;
+    width: 100%;
+}
+
+#main-box-contact{
+    background-color: #fdfffd;
+    max-width: 900px;
+    width: 100%;
+    height: 1000px;
+    height: 100%;
+}
+#main-box-contact-address{
+    background-color: #edf2f4;
+    max-width: 800px;
+    width: 100%;
+    max-height: 900px;
+    height: 100%;
+}
+#main-box-contact-address dt{
+    color: rgba(0, 0, 0, 0.5);
+}
+#main-box-contact-form{
+    background-color: #d9d9d9;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+}
+#main-box-contact-form button{
+    border-radius: 10px;
+}
+
+#main-box-about{
+    background-color: #fdfffd;
+    max-width: 900px;
+    width: 100%;
+}
+
+.font-40{
+    font-size: 40px;
+}
+.font-80{
+    font-size: 80px;
+}
+.font-20{
+    font-size: 20px;
+}
+@media (max-width:575px){
+    .font-40{
+        font-size: 30px;
+    }
+    .font-80{
+        font-size: 60px;
+    }
+    .font-20{
+        font-size: 15px;
+    }
+    #main-box-benefit #main-icon-benefit{
+        font-size: 75px;
+    }
+}
+
+/*----------ACCOUNT----------*/
+#wrapper-box-account{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.account-input{
+    border-radius: 15px;
+}
+.account-submit{
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.account-grid{
+    max-width: 750px;
+    width: 100%;
+}
+#container-account{
+    background-color: #b5b5b5;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#container-account-form{
+    max-width: 500px;
+    width: 100%;
+}
+
+#login-user-form a,
+#register-user-form a,
+#user-footer a{
+    color: #212529;
+    transition: 0.1s ease;
+
+    &:hover{
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

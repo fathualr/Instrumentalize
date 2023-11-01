@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dashboard</title>
+    <!--Logo Website-->
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <!--Framework Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style-admin.css">
+    <!--FontAwesome Icon-->
+    <script src="https://kit.fontawesome.com/a28c4a206b.js" crossorigin="anonymous"></script>
+    <!--Poppins Font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>    
+</head>
+<body>
+    <!--HEADER-->
+    <header class="container-fluid" id="">
+        <div class="d-flex align-items-center justify-content-between mx-lg-5" id="admin-box-header">
+            <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvasExample">
+                <i class="h1 fa-solid fa-bars m-0" style="color: #000000;"></i>
+            </button>
+            <img src="images/INSTRUMENTALIZE_logo.png" class="ml-5" alt="instrumentalize-logo">
+            <h3 class="d-none d-lg-block mb-0">Selamat datang, Admin</h3>
+            <div class="dropdown-center">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="h1 fa-regular fa-user m-0" style="color: #000"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex" id="wrapper-content">
+        <!--SIDEBAR NAVIGATION-->
+        <div class="offcanvas-lg offcanvas-start bg-black text-light" tabindex="-1" id="offcanvas-navbar" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-center">
+                <img src="images/INSTRUMENTALIZE_logo.png" alt="" width="200px">
+            </div>
+        <nav class="d-lg-flex flex-column text-white p-4" id="admin-box-navigation">
+            <ul class="h4 navbar-nav">
+                <li class="nav-item">
+                    <a href="admin-dashboard.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-editor.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Editor
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-management.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-table"></i>
+                        Management
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-orders.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-user.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-id-card"></i>
+                        User
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-reports.html" class="nav-link mb-3">
+                        <i class="fa-solid fa-message"></i>
+                        Reports
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <!--CONTENT-->
+        <section class="text-light p-3" id="admin-box-content">
+            <h2><b>Dashboard</b></h2>
+            <div class="container-fluid d-flex flex-column text-dark text-center">
+                <div class="row">
+                    <div class="col-12 col-xl-3 p-0 mb-4 mx-auto" id="content-box-total">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Jumlah Produk</b>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>[XX]</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-12 col-xl-3 p-0 mb-4 mx-auto" id="content-box-total">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Jumlah Pengguna</b>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>[XX]</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-12 col-xl-3 p-0 mb-4 mx-auto" id="content-box-total">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Jumlah Orderan</b>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>[XX]</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-12 col-xl-3 p-0 mb-4 mx-auto" id="content-box-total">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Jumlah Pengguna</b>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>[XX]</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-6 p-0 mb-4">
+                        <div class="col-12 p-0 mb-lg-5 mb-4 mx-auto" id="content-box-newest">
+                            <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                                <b>Pengguna Terbaru</b>
+                            </div>
+                            <div class="overflow-x-scroll">
+                            <table>
+                                <tr>
+                                    <td>$photo_profile</td>
+                                    <td>$name</td>
+                                    <td>$email</td>
+                                    <td>$registration-date</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 mx-auto" id="content-box-newest">
+                            <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                                <b>Orderan Terbaru</b>
+                            </div>
+                            <div class="overflow-x-scroll">
+                            <table>
+                                <tr>
+                                    <td>$order_id</td>
+                                    <td>$user_name</td>
+                                    <td>$product</td>
+                                    <td>$user_email</td>
+                                    <td>$date_order</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 p-0 mb-4">
+                        <div class="mx-auto" id="content-box-top-sold">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Produk Penjualan Teratas</b>
+                        </div>
+                        <div class="overflow-x-scroll">
+                        <table>
+                            <tr>
+                                <td>$product_photo</td>
+                                <td>$product_name</td>
+                                <td>$product_sold</td>
+                            </tr>
+                            <tr>
+                                <td>$product_photo</td>
+                                <td>$product_name</td>
+                                <td>$product_sold</td>
+                            </tr>
+                            <tr>
+                                <td>$product_photo</td>
+                                <td>$product_name</td>
+                                <td>$product_sold</td>
+                            </tr>
+                        </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-12 p-0" id="content-box-new-product">
+                        <div class="d-flex justify-content-center align-items-center" id="box-content-head">
+                            <b>Produk Terbaru</b>
+                        </div>
+                        <div class="overflow-x-scroll">
+                        <table>
+                            <tr>
+                                <td>$product_id</td>
+                                <td>$product_photo</td>
+                                <td>$product_name</td>
+                                <td>$product_stock</td>
+                                <td>$product_price</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid justify-content-center d-flex align-items-end" id="">
+        ©2023 INSTRUMENTALIZE
+    </footer>
+</body>
+</html>

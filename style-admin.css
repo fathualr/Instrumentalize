@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #161a1d;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/*----------HEADER----------*/
+header{
+    height: 100px;
+    background-color: #eee;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header .btn{
+    border: none;
+}
+
+.dropdown-menu{
+
+    &:active, :focus{
+        background-color: #eee;
+    }
+}
+
+/*----------FOOTER----------*/
+footer{
+    height: 100px;
+    background-color: #eee;
+}
+
+/*----------NAVIGATION----------*/
+nav{
+    min-height: calc(100vh - 200px);
+}
+#admin-box-navigation{
+    background-color: #0B090A;
+    min-width: 250px;
+}
+#nav-box{
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+}
+.nav-link{
+    padding: 0;
+}
+.navbar-nav li a{
+    color: #eeeeee;
+    border-bottom: 2px solid transparent;
+    transition: all .40s ease;
+
+    &:hover{
+    color: #eeeeee;
+    border-bottom: 2px solid;
+    }
+    &:active{
+        background-color: #eee;
+        color: #0B090A;
+    }
+}
+#offcanvas-navbar{
+    color: #eeeeee;
+    width: 250px;
+}
+#offcanvas-navbar img{
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+/*--------------------CONTENT--------------------*/
+#wrapper-content{
+    min-height: calc(100vh - 200px);
+    width: 100%;
+}
+#admin-box-content{
+    width: 100%;
+}
+#input-search{
+    border: none;
+}
+
+/*----------DASHBOARD----------*/
+#content-box-total,
+#content-box-newest,
+#content-box-top-sold,
+#content-box-new-product{
+    background-color: #fdfffd;
+    border-radius: 20px;
+}
+#content-box-total,
+#content-box-newest,
+#content-box-new-product{
+    height: 150px;
+}
+#content-box-top-sold{
+    height: 350px;
+}
+#content-box-total{
+    max-width: 250px;
+}
+#content-box-newest,
+#content-box-top-sold{
+    max-width: 500px;
+}
+
+#box-content-head{
+    background-color: #d9d9d9;
+    width: auto;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+#content-box-total table,
+#content-box-newest table,
+#content-box-top-sold table,
+#content-box-new-product table{
+    width: 100%;
+}
+#content-box-total table,
+#content-box-newest table,
+#content-box-new-product table{
+    height: 100px;
+}
+#content-box-top-sold table tr{
+    height: 100px;
+}
+
+/*----------EDITOR----------*/
+/*----------MANAGEMENT----------*/
+#content-box-management{
+    background-color: #d9d9d9;
+    width: auto;
+    height: auto;
+}
+
+#button-management-add{
+    border: none;
+    border-radius: 0;
+}
+
+#admin-table-management tr{
+    height: 50px;
+}
+#admin-table-management td{
+    padding: 1rem;
+}
+
+#pagination-table button,
+#pagination-table input{
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border: 1px solid #eee;
+    border-radius: 0;
+}
+/*----------ORDERS----------*/
+/*----------USER----------*/
+/*----------REPORTS----------*/
